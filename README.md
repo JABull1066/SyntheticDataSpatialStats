@@ -45,7 +45,7 @@ The spatial statistics for the three rings point cloud are similar to those of t
 <img src="./Jfunction_3RingsExamplePointcloud.png" width="400"/>
 
 ## Agent-based model
-Below, we show the PCF, J-function, SCD CDF and NN CDF every 20 hours for simulations with five different values of the chemotaxis parameter &#x3C7;, both in the presence and absence of noise. In each case, the line represents the average across five simulation repetitions with the same parameters.
+Below, we show the PCF, J-function, SCD CDF and NN CDF every 20 hours for simulations with five different values of the chemotaxis parameter &#x3C7;, both in the presence and absence of noise. In each case, the line represents the average across five simulation repetitions with the same parameters. Lines are coloured according to simulation timestep, moving from light blue to dark blue (0, 20, 40, 60, 80 and 100 hours).
 
 In the absence of noise, the peaks of the PCF can be used to identify how quickly the macrophages move to the centre of the spheroid (indicated by higher clustering caused by macrophages accumulating at the spheroid centre, described in the manuscript main text). A similar trend can be observed in the spherical contact distributions, which could potentially be used to measure the rate at which voids between macrophages close in the simulations. However, it is unintuitive to move from these statistics to a detailed spatial description of how macrophages are moving within the simulations, and it is only through having seen the simulations that this type of structure can be inferred. In the presence of noise, it is highly difficult to discern patterns through time in each simulation.
 
