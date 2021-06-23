@@ -23,26 +23,40 @@ For a full definition of each of these statistics, we refer the interested reade
 ## Two rings point cloud
 ### PCF
 <img src="./PCF_2RingsExamplePointcloud.png" width="400"/>
+<p>Above: PCF for the two rings example point cloud.</p>
+
 The PCF for the two rings point cloud shows clustering at short length scales (below approximately 1 unit), and is suggestive of dispersion at longer length scales (greater than approximately 2 units). While it suggests that poitns are not randomly distributed, in this case the structure of the point cloud cannot be inferred from the PCF.
 
 ### Nearest-neighbour and spherical contact distributions
 <img src="./NN_CDF_2RingsExamplePointcloud.png" width="400"/> <img src="./SCD_CDF_2RingsExamplePointcloud.png" width="400"/>
+<p>Above left: Nearest-neighbour CDF for the two rings example point cloud. 
+  
+  Above right: Spherical contact distribution CDF for the two rings example point cloud.</p>
+
+
 The nearest-neighbour CDF shows that almost all points have a neighbouring point within 0.2 units of them. The SCD is related to the size of voids in an point pattern, but is sensitive to noise. This CDF is suggestive of some relatively large voids in the image (up to 1.5 units in diameter), but the structure of the point cloud cannot be inferred from either distribution.
 
 ### J-function
 <img src="./Jfunction_2RingsExamplePointcloud.png" width="400"/>
+<p>Above: J-function for the two rings example point cloud.</p>
+
 The J-function compares the CDFs of the nearest-neighbour and spherical contact distributions at different lengthscales. Values below one suggest clustering, and values above one suggest dispersion. In this case, we see clear evidence of clustering between points in the pattern at short length scales, detectable up to a radius of approximately 1.5 units.
 
 ## Three rings point cloud
 The spatial statistics for the three rings point cloud are similar to those of the two rings point cloud, suggesting clustering at short length scales. The size of the void identified by the SCD and the maximum radius at which the J-function is defined is smaller (approximately 0.9 units), suggesting that the largest void in this point pattern is smaller than that in the two-rings point cloud. While these relative sizes are useful, the spatial statistics are unable to identify the number of voids in the two images.
 ### PCF
 <img src="./PCF_3RingsExamplePointcloud.png" width="400"/>
+<p>Above: PCF for the three rings example point cloud.</p>
 
 ### Nearest-neighbour and spherical contact distributions
 <img src="./NN_CDF_3RingsExamplePointcloud.png" width="400"/> <img src="./SCD_CDF_3RingsExamplePointcloud.png" width="400"/>
+<p>Above left: Nearest-neighbour CDF for the three rings example point cloud. 
+  
+  Above right: Spherical contact distribution CDF for the three rings example point cloud.</p>
 
 ### J-function
 <img src="./Jfunction_3RingsExamplePointcloud.png" width="400"/>
+<p>Above: J-function for the three rings example point cloud.</p>
 
 ## Agent-based model
 Below, we show the PCF, J-function, SCD CDF and NN CDF every 20 hours for simulations with five different values of the chemotaxis parameter &#x3C7;, both in the presence and absence of noise. In each case, the line represents the average across five simulation repetitions with the same parameters. Lines are coloured according to simulation timestep, moving from light blue to dark blue (0, 20, 40, 60, 80 and 100 hours).
@@ -57,6 +71,7 @@ The J-functions are particularly difficult to interpret. The radius at which the
 <img src="./avg_PCF_chi5_0percentNoise.png" width="400"/> <img src="./avg_PCF_chi5_1percentNoise.png" width="400"/>
 <img src="./avg_PCF_chi7.5_0percentNoise.png" width="400"/> <img src="./avg_PCF_chi7.5_1percentNoise.png" width="400"/>
 <img src="./avg_PCF_chi10_0percentNoise.png" width="400"/> <img src="./avg_PCF_chi10_1percentNoise.png" width="400"/>
+<p>Above: PCFs for agent-based models without noise (left) and with noise (right) for simulations with different values of &#x3C7;. Early timesteps are shown in light blue, and later timesteps in dark blue (timesteps shown: 0, 20, 40 60, 80, 100 hours after adding macrophages)</p>
 
 
 ### Spherical contact distribution
@@ -65,6 +80,7 @@ The J-functions are particularly difficult to interpret. The radius at which the
 <img src="./avg_SCD_CDF_chi5_0percentNoise.png" width="400"/> <img src="./avg_SCD_CDF_chi5_1percentNoise.png" width="400"/>
 <img src="./avg_SCD_CDF_chi7.5_0percentNoise.png" width="400"/> <img src="./avg_SCD_CDF_chi7.5_1percentNoise.png" width="400"/>
 <img src="./avg_SCD_CDF_chi10_0percentNoise.png" width="400"/> <img src="./avg_SCD_CDF_chi10_1percentNoise.png" width="400"/>
+<p>Above: CDFs of the spherical contact distribution for agent-based models without noise (left) and with noise (right) for simulations with different values of &#x3C7;. Early timesteps are shown in light blue, and later timesteps in dark blue (timesteps shown: 0, 20, 40 60, 80, 100 hours after adding macrophages)</p>
 
 
 ### Nearest neighbour distribution
@@ -73,6 +89,7 @@ The J-functions are particularly difficult to interpret. The radius at which the
 <img src="./avg_NN_CDF_chi5_0percentNoise.png" width="400"/> <img src="./avg_NN_CDF_chi5_1percentNoise.png" width="400"/>
 <img src="./avg_NN_CDF_chi7.5_0percentNoise.png" width="400"/> <img src="./avg_NN_CDF_chi7.5_1percentNoise.png" width="400"/>
 <img src="./avg_NN_CDF_chi10_0percentNoise.png" width="400"/> <img src="./avg_NN_CDF_chi10_1percentNoise.png" width="400"/>
+<p>Above: CDFs of the nearest-neighbour distribution for agent-based models without noise (left) and with noise (right) for simulations with different values of &#x3C7;. Early timesteps are shown in light blue, and later timesteps in dark blue (timesteps shown: 0, 20, 40 60, 80, 100 hours after adding macrophages)</p>
 
 
 ### J-function
@@ -81,3 +98,4 @@ The J-functions are particularly difficult to interpret. The radius at which the
 <img src="./avg_Jfunction_chi5_0percentNoise.png" width="400"/> <img src="./avg_Jfunction_chi5_1percentNoise.png" width="400"/>
 <img src="./avg_Jfunction_chi7.5_0percentNoise.png" width="400"/> <img src="./avg_Jfunction_chi7.5_1percentNoise.png" width="400"/>
 <img src="./avg_Jfunction_chi10_0percentNoise.png" width="400"/> <img src="./avg_Jfunction_chi10_1percentNoise.png" width="400"/>
+<p>Above: J-functions for agent-based models without noise (left) and with noise (right) for simulations with different values of &#x3C7;. Early timesteps are shown in light blue, and later timesteps in dark blue (timesteps shown: 0, 20, 40 60, 80, 100 hours after adding macrophages)</p>
